@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.msg{
+    color: red;
+    font-size: 18px;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: lightgray;
+}
+
+.form form{
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 6px 20px rgb;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 28rem;
+}
+
+.form form h2{
+    margin-bottom: 1.5rem;
+}
+
+.form form input{
+    padding: 10px 15px;
+}
+
+.form form button{
+    width: 100%;
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+}
+
+.form form p{
+    font-size: 15px;
+    margin-top: 8px;
+}
