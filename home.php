@@ -7,7 +7,12 @@ include 'koneksi.php';
 // menampilkan jumlah peserta
 $query = mysqli_query($koneksi, "SELECT COUNT(*) AS total FROM t_peserta");
 $data = mysqli_fetch_assoc($query);
-$total_peserta = $data['total'];
+$total_pasien = $data['total'];
+
+// menampilkan jumlah dokter
+$query = mysqli_query($koneksi, "SELECT COUNT(*) AS total FROM t_dokter");
+$data = mysqli_fetch_assoc($query);
+$total_dokter = $data['total'];
 
 // cek apakah user sudah login
 if (!isset($_SESSION['email'])) {
@@ -51,7 +56,7 @@ $nama = $_SESSION['nama'];
           <div class="card-body">
             <!-- <img src="..." class="card-img-top" alt="..."> -->
             <h5 class="card-title">Data Pasien</h5>
-            <p class="card-text"><b><?php echo $total_peserta; ?> Pasien</b></p>
+            <p class="card-text"><b><?php echo $total_pasien; ?> Pasien</b></p>
             <a href="data_pasien.php" class="btn btn-primary">Lihat Data</a>
           </div>
         </div>
@@ -62,8 +67,8 @@ $nama = $_SESSION['nama'];
         <div class="card text-center">
           <div class="card-body">
             <h5 class="card-title">Data Dokter</h5>
-            <p class="card-text"><b>12 Dokter</b></p>
-            <a href="#" class="btn btn-primary">Lihat Data</a>
+            <p class="card-text"><b><?php echo $total_dokter; ?> Dokter</b></p>
+            <a href="data_dokter.php" class="btn btn-primary">Lihat Data</a>
           </div>
         </div>
       </div>

@@ -30,7 +30,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="data_pasien.php">Data Pasien</a></li>
-                        <li><a class="dropdown-item" href="#">Data Dokter</a></li>
+                        <li><a class="dropdown-item" href="data_dokter.php">Data Dokter</a></li>
                         <li><a class="dropdown-item" href="#">Data Ruangan</a></li>
                     </ul>
                 </li>
