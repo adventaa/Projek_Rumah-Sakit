@@ -38,7 +38,7 @@
                             <th>No Telepon</th>
                             <th>Tempat Lahir</th>
                             <th>Tanggal Lahir</th>
-                            <th>Usia</th>
+                            <!-- <th>Usia</th> -->
                             <th>Berat Badan</th>
                             <th>Tinggi Badan</th>
                             <th>Jenis Kelamin</th>
@@ -61,7 +61,7 @@
                                 <td><?= $data['no_telepon'] ?></td>
                                 <td><?= $data['tempat_lahir'] ?></td>
                                 <td><?= $data['tanggal_lahir'] ?></td>
-                                <td><?= $data['usia'] ?></td>
+                                <!-- <td><?= $data['usia'] ?></td> -->
                                 <td><?= $data['berat'] ?></td>
                                 <td><?= $data['tinggi'] ?></td>
                                 <td><?= $data['jk'] ?></td>
@@ -127,11 +127,11 @@
                                                         value="<?= $data['tanggal_lahir'] ?>">
                                                 </div>
 
-                                                <div class="mb-3">
+                                                <!-- <div class="mb-3">
                                                     <label class="form-label">Usia</label>
                                                     <input type="text" class="form-control" name="usia"
                                                         value="<?= $data['usia'] ?>" placeholder="Masukkan Usia">
-                                                </div>
+                                                </div> -->
                                                 <div class="mb-3">
                                                     <label class="form-label">Berat Badan</label>
                                                     <input type="text" class="form-control" name="berat_badan"
@@ -259,11 +259,11 @@
                                             <input type="date" class="form-control" name="tgl_lahir">
                                         </div>
 
-                                        <div class="mb-3">
+                                        <!-- <div class="mb-3">
                                             <label class="form-label">Usia</label>
                                             <input type="text" class="form-control" name="usia"
                                                 placeholder="Masukkan Usia">
-                                        </div>
+                                        </div> -->
                                         <div class="mb-3">
                                             <label class="form-label">Berat Badan</label>
                                             <input type="text" class="form-control" name="berat_badan"
